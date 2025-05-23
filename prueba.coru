@@ -1,0 +1,11 @@
+utilice Modelos;
+
+# Definir entrada y modelo guardado previamente
+entrada = [0.5, 0.2];
+modelo = cargar_modelo("modelo.txt");
+pesos = modelo[0];
+sesgos = modelo[1];
+
+# Ejecutar predicción
+salida = predecir(entrada, pesos, sesgos);
+escribir("Salida de red (predecir):", salida);
